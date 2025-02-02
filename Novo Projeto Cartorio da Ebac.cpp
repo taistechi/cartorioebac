@@ -108,8 +108,10 @@ printf("###CARTÓRIA DA EBAC ### \n\n");
 printf(" Escolha a opção desejada no menu: \n\n");
 printf("\t1 - Registrar Nomes:\n");
 printf("\t2 - Consultar Nomes:\n");
-printf("\t3 - Deletar Nomes:\n\n");
-printf("Opçoes:"); 
+printf("\t3 - Deletar Nomes:\n");
+printf("\t4 - Sair do programa\n"); 
+printf("Opçoes:");
+
 
 scanf("%d", &opcao);
 
@@ -131,7 +133,10 @@ case 3:
 deletar ();
 break;
 
-
+case 4:
+printf ("obrigado por utilizar o sistema\n\n");
+	return 0;
+	break;
 
 default:
 printf("Essa opção não está disponivel \n");
